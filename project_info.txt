@@ -1,1 +1,3 @@
 Foi usado a quicktipeio para gerar o model.
+Modificamos o arquivo gerado removendo "json.decode", pois o get connect não o usa
+deixei a parte original comentada pra questão de comparação e esetudo
