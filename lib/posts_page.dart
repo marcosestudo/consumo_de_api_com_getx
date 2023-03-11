@@ -20,11 +20,16 @@ class PostsPage extends GetView<PostsController> {
             child: CircularProgressIndicator(),
           );
         }
-        return ListView.builder(itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(controller.postsList[index].title),
-          );
-        });
+        return Scrollbar(
+          child: ListView.builder(
+              itemCount: controller
+                  .postsList.length, // diz o máximo de itens possíveis
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(controller.postsList[index].title),
+                );
+              }),
+        );
       }),
     );
   }

@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:consumo_de_api_jsonplaceholder/posts_model.dart';
 import 'package:get/get.dart';
 
