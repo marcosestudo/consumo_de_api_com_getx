@@ -1,3 +1,4 @@
+import 'package:consumo_de_api_jsonplaceholder/posts_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,28 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Aprendendo consumo de API...'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text(
-              'Aprendendo a usar o GetConnect',
-            ),
-          ],
-        ),
-      ),
+      home: PostsPage(),
     );
   }
 }
