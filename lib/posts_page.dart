@@ -21,9 +21,12 @@ class PostsPage extends GetView<PostsController> {
           );
         }
         return Scrollbar(
+          thumbVisibility: true,
+          trackVisibility: true,
+          thickness: 12.0,
+          interactive: true,
           child: ListView.builder(
-              itemCount: controller
-                  .postsList.length, // diz o máximo de itens possíveis
+              itemCount: controller.postsList.length,
               itemBuilder: (context, index) {
                 return ListTile(
                   title: Text(controller.postsList[index].title),
